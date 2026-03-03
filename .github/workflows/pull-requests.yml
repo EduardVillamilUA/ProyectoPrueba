@@ -38,6 +38,9 @@ jobs:
     name: Automerge
     needs: job1
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: automerge
         uses: "pascalgn/automerge-action@v0.16.4"
